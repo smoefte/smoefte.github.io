@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Die Smöfte Website - Über uns</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="menu"></div>
+        <script>
+            fetch("menu.html").then(response => response.text()).then(html => { document.getElementById("menu").innerHTML = html })
+        </script>
+        <h1>Über Smöfte</h1>
+        <p>...</p>
+    </body>
+</html>
