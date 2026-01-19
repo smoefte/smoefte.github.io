@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>Über uns - Smöfte</title>
-        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
-        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div id="menu"></div>
         <script>
-            fetch("menu.html").then(response => response.text()).then(html => { document.getElementById("menu").innerHTML = html })
+            fetch("menu.html")
+                .then((response) => response.text())
+                .then((html) => {
+                    document.getElementById("menu").innerHTML = html;
+                });
         </script>
         <h1>Über Smöfte</h1>
         <p><i>In Bearbeitung...</i></p>
+
+        <h2>Smöfte im Netz</h2>
+        <a href="https://youtube.com/@smoefte">YouTube</a> <br />
+        <a href="https://soundcloud.com/smoefteband">SoundCloud</a>
     </body>
 </html>
